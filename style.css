@@ -14,9 +14,9 @@ body{
 
 /* HERO */
 .hero{
-    min-height: 70vh;
-    background-image: linear-gradient(rgba(15,17,20,0.55), rgba(15,17,20,0.55)),
-    url('images/night owl bar.png');
+    min-height: 75vh;
+    background-image: linear-gradient(rgba(15,17,20,0.75), rgba(15,17,20,0.75)),
+    url('images/slika1.jpg');
     background-size: cover;
     background-position: center 45%;
     position: relative;
@@ -40,6 +40,12 @@ body{
 }
 .nav-link:hover {
     color: white !important;
+}
+
+.about-img{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* menu karticki */
@@ -104,4 +110,8 @@ menu-item[data-type="specialty"] .menu-card:hover{
 a:focus, button:focus, input:focus {
     outline: 3px solid rgba(246,185,59,0.25);
     outline-offset: 2px;
+}
+
+.voda img{
+    height: 500px;
 }

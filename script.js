@@ -11,10 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const totalMinutes = h*60 + m;
 
         const open1Start = 8*60;
-        const open1End = 24*60 - 1;
-        const open2Start = 0;
-        const open2End = 3*60;
-        const isOpen = (totalMinutes >= open1Start && totalMinutes <= open1End) || (totalMinutes >= open2Start && totalMinutes <= open2End);
+        const open1End = 24*60;
+
+        const isOpen = totalMinutes >= open1Start && totalMinutes <= open1End
         openBadge.textContent = isOpen ? 'Отворено' : 'Затворено';
         openBadge.classList.toggle('bg-success', isOpen);
         openBadge.classList.toggle('bg-danger', !isOpen);

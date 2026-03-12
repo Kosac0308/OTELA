@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Night Owl Bar</title>
+    <title>ОТЕЛА</title>
 
-    <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Night Owl Bar</a>
+        <a class="navbar-brand fw-bold" href="https://www.instagram.com/coffeebarotela/" target="_blank">Отела</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,12 +28,10 @@
                 <li class="nav-item"><a class="nav-link" href="#about">За нас</a></li>
                 <li class="nav-item"><a class="nav-link" href="#menu">Мени</a></li>
                 <li class="nav-item"><a class="nav-link" href="#gallery">Галерија</a></li>
-                <li class="nav-item"><a class="nav-link" href="#events">Настани</a></li>
-                <li class="nav-item"><a class="nav-link" href="#reservation">Резервација</a></li>
             </ul>
             <div class="d-none d-lg-flex align-items-center ms-3">
                 <span id="openStatus" class="badge bg-success me-2">Loading...</span>
-                <button class="btn btn-outline-warning btn-sm" id="reserveBtnTop">Резервирај</button>
+
             </div>
         </div>
     </div>
@@ -43,13 +41,12 @@
 <header id="hero" class="hero d-flex align-items-center text-white">
     <div class="overlay"></div>
     <div class="container text-center position-relative">
-        <h1 class="display-5 fw-bold">Добредојдовте во Night Owl Bar</h1>
-        <p class="lead mb-4">Место за музика, коктели и незаборавни ноќи.</p>
+        <h1 class="display-5 fw-bold">Добредојдовте во Отела</h1>
+        <p class="lead mb-4">Место за кафе, вкусни пијалоци и пријатни моменти.</p>
         <div>
             <a href="#menu" class="btn btn-warning btn-lg me-2">Гледај мени</a>
-            <button class="btn btn-outline-light btn-lg" id="heroReserve">Резервирај маса</button>
         </div>
-        <small class="working-hours d-block mt-3 text-muted">Работно време: 8:00 AM — 03:00 AM</small>
+        <small class="working-hours d-block mt-3 text-muted">Работно време: 8:00 AM — 00:00 AM</small>
     </div>
 </header>
 
@@ -61,15 +58,14 @@
             <div class="row align-items-center g-4">
                 <div class="col-lg-6">
                     <h2>За нас</h2>
-                    <p class="lead">Night Owl Bar е место каде што ноќта оживува — внимателно избрани коктели, локални диџеи и пријатна атмосфера.</p>
+                    <p class="lead">OTELA е кафебар каде што секој момент станува посебен — уживајте во вкусно подготвено кафе, квалитетни пијалоци и пријатна атмосфера.</p>
                     <ul>
-                        <li>Квалитетни пијалоци и оригинални коктели</li>
-                        <li>Настани секој викенд</li>
-                        <li>Онлајн резервации и брз одговор</li>
+                        <li>Висококвалитетни кафе пијалоци и специјални напитки</li>
+                        <li>Пријатна и опуштена атмосфера</li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/about.png" alt="bar" class="img-fluid rounded shadow" loading="lazy">
+                    <img src="images/slika2.jpg" alt="bar" class="img-fluid rounded shadow, about-img" loading="lazy">
                 </div>
             </div>
         </div>
@@ -82,24 +78,139 @@
                 <h2 class="mb-0">Нашето мени</h2>
                 <div>
                     <button class="btn btn-sm btn-outline-light me-1 filter-btn active" data-filter="all">Сите</button>
+                    <button class="btn btn-sm btn-outline-light me-1 filter-btn" data-filter="coffee">Tопли напитоци</button>
+                    <button class="btn btn-sm btn-outline-light me-1 filter-btn" data-filter="beer">Пиво</button>
                     <button class="btn btn-sm btn-outline-light me-1 filter-btn" data-filter="alcohol">Алкохолни</button>
                     <button class="btn btn-sm btn-outline-light me-1 filter-btn" data-filter="non-alcohol">Безалкохолни</button>
-                    <button class="btn btn-sm btn-outline-light me-1 filter-btn" data-filter="specialty">Специјалитети</button>
+
                 </div>
             </div>
 
             <div class="row g-4" id="menuGrid">
 
+                <!------------- Пиво --------------------->
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/hajneken.jpg" class="card-img-top" alt="хајнекен" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Хајнекен</h5>
+                            <p class="card-text">Освежително премиум светло пиво со чист вкус и балансирана горчина.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Хајнекен" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/skopsko%20smut.png" class="card-img-top" alt="смут мало" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Скопско Смут Мало</h5>
+                            <p class="card-text">Лесно и меко пиво со нежна горчина и исклучително мазен вкус.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Скопско Смут Мало" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/skopsko%20smut.png" class="card-img-top" alt="смут големо" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Скопско Смут Големо</h5>
+                            <p class="card-text">Лесно и меко пиво со нежна горчина и исклучително мазен вкус.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Скопско Смут Големо" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/skopsko.png" class="card-img-top" alt="скопско мало" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Скопско Мало</h5>
+                            <p class="card-text">Класично македонско светло пиво со полн вкус и карактеристична горчина.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Скопско Мало" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/skopsko.png" class="card-img-top" alt="скопско големо" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Скопско Големо</h5>
+                            <p class="card-text">Класично македонско светло пиво со полн вкус и карактеристична горчина.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Скопско Големо" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/tuborg.png" class="card-img-top" alt="margarita" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Туборг</h5>
+                            <p class="card-text">Лагер пиво со лесен, свеж вкус и умерена горчина.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>130 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Туборг" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/amstel.jpg" class="card-img-top" alt="amstel" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Амстел</h5>
+                            <p class="card-text">Освежително светло пиво со лесен, балансиран вкус и пријатна горчина.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>130 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Амстел" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="beer">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/budvajzer.jpg" class="card-img-top" alt="budvajzer" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Будвајзер</h5>
+                            <p class="card-text">Лесно и освежувачко пиво со балансиран вкус, блага горчина и чиста златна боја.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>130 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Будвајзер" data-desc="Вода, јачменов слад, хмељ, квасец.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- alkoholni pijaloci -->
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/margarita.png" class="card-img-top" alt="margarita" loading="lazy">
+                        <img src="images/LRZOLTA.jpg" class="card-img-top" alt="zolta rakija" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Маргарита</h5>
-                            <p class="card-text">Традиционален коктел со текила, трипл сек и лиме.</p>
+                            <h5 class="card-title">Жолта Ракија</h5>
+                            <p class="card-text">Традиционална домашна ракија со топол, богат вкус и лесна арома од дрво.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>350 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Маргарита" data-desc="Текила, трипл сек, сок од лиме">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Жолта Ракија" data-desc="Дестилирано овошје (најчесто слива или грозје).">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -107,13 +218,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/old%20fashioned.jpg" class="card-img-top" alt="oldfashioned" loading="lazy">
+                        <img src="images/LRBELA.jpg" class="card-img-top" alt="бела ракија" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Old Fashioned</h5>
-                            <p class="card-text">Класичен бурбон коктел.</p>
+                            <h5 class="card-title">Бела ракија</h5>
+                            <p class="card-text">Класична ракија со чист, остар и интензивен вкус — вистински домашен дух.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>420 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Old Fashioned" data-desc="Бурбон, шеќер, битери">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Бела Ракија" data-desc="Дестилирано овошје (грозје, сливи, јаболка).">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -121,13 +232,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/mojito.jpg" class="card-img-top" alt="mojito" loading="lazy">
+                        <img src="images/vodka.jpg" class="card-img-top" alt="водка" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Мохито</h5>
-                            <p class="card-text">Освежителен коктел со рум, нане и лимета.</p>
+                            <h5 class="card-title">Водка</h5>
+                            <p class="card-text">Кристално чист алкохол со неутрален вкус и мазна питкост.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>300 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Mojito" data-desc="Бели рум, нане, лимета, сода, шеќер">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Водка" data-desc="Дестилиран етанол (од жито или компир), вода.">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -136,13 +247,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/cosmopolitan.jpg" class="card-img-top" alt="cosmopolitan" loading="lazy">
+                        <img src="images/viski.jpg" class="card-img-top" alt="Виски" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Kосмополитен</h5>
-                            <p class="card-text">Стилен коктел со вотка и сок од брусница.</p>
+                            <h5 class="card-title">Виски</h5>
+                            <p class="card-text">Силно пијалок со комплексни ноти на дрво, карамела и зрнести ароми.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>350 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Cosmopolitan" data-desc="Вотка, трипл сек, брусница, лимета">Состојки</button>
+                                <strong>150 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Виски" data-desc="Јачмен/жито, вода, квасец (дестилација + зреење во даб).">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -150,13 +261,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/whiskey-sour.jpg" class="card-img-top" alt="whiskey sour" loading="lazy">
+                        <img src="images/jeger.jpg" class="card-img-top" alt="Јегер" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Виски саур</h5>
-                            <p class="card-text">Класика со бурбон и свеж сок од лимон.</p>
+                            <h5 class="card-title">Јегер</h5>
+                            <p class="card-text">Хербален ликер со длабока арома од зачини, билки и сладок горчлив финиш.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>320 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Whiskey Sour" data-desc="Бурбон, лимон, шеќерен сируп, белка">Состојки</button>
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Јегер" data-desc="Билки, зачини, корени, овошја, шеќер, алкохол, вода.">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -164,13 +275,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/negroni.jpg" class="card-img-top" alt="negroni" loading="lazy">
+                        <img src="images/gin.jpg" class="card-img-top" alt="џин" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Негрони</h5>
-                            <p class="card-text">Горчливо-слатка комбинација на италијански стил.</p>
+                            <h5 class="card-title">Џин</h5>
+                            <p class="card-text">Ароматичен пијалок со доминантен вкус на смрека и свежи ботанички ноти.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>380 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Negroni" data-desc="Џин, кампари, слатки вермут">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Џин" data-desc="Алкохол, смрека, кориандер, цитрусни кори, билки.">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -178,13 +289,125 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/pina-colada.jpg" class="card-img-top" alt="pina colada" loading="lazy">
+                        <img src="images/UZO.jpg" class="card-img-top" alt="узо" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Пина колада</h5>
-                            <p class="card-text">Егзотичен коктел со рум, кокос и ананас.</p>
+                            <h5 class="card-title">Узо</h5>
+                            <p class="card-text">Анисова спиритоза со интензивна арома и освежувачки медитерански карактер.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>360 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Piña Colada" data-desc="Бели рум, кокос крем, сок од ананас">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Узо" data-desc="алкохол, анасон, билки, вода.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/PELINKOVAC.jpg" class="card-img-top" alt="пелинковац" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Пелинковац</h5>
+                            <p class="card-text">Горчливо-хербален ликер со длабок вкус и изразена арома од пелин.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Пелинковац" data-desc="Пелин, билки, шеќер, алкохол, вода.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/KONJAK.jpg" class="card-img-top" alt="коњак" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Коњак</h5>
+                            <p class="card-text">Фин дестилат со богат, мек вкус и ароми на ванила, дрво и сушено овошје.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Коњак" data-desc="Ферментиран сок од грозје, дестилат, зреење во даб.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/MASTIKA.jpg" class="card-img-top" alt="Мастика" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Мастика</h5>
+                            <p class="card-text">Ароматичен анисов пијалок со благ и освежувачки финиш.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Мастика" data-desc="Алкохол, анасон, мастиково смола, вода.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/GINTONIC.avif" class="card-img-top" alt="џин тоник" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Џин Тоник</h5>
+                            <p class="card-text">Класичен освежувачки микс со лесна цитрусна нота.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Џин Тоник" data-desc="Џин, тоник , парче лимон или лимета">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/VODKAJUICE.jpg" class="card-img-top" alt="Водка џус" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Водка Џус</h5>
+                            <p class="card-text">Едноставен и свеж коктел со слатко-цитрусен вкус.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Водка Џус" data-desc="Водка, сок од портокал.">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/LITAR.png" class="card-img-top" alt="Намештај" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Намештај</h5>
+                            <p class="card-text">Бело вино 250ml, кисела вода 250ml</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>100 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Намештај" data-desc="Бело вино и кисела вода">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/LITAR.png" class="card-img-top" alt="Пола со пола" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Пола Со Пола</h5>
+                            <p class="card-text">Бело вино 500ml, кисела вода 500ml</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>250 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Пола Со Пола" data-desc="Бело вино и кисела вода">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="alcohol">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/LITAR.png" class="card-img-top" alt="литар со литар" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Литар Со Литар</h5>
+                            <p class="card-text">Бело вино 1L, кисела вода 1L</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>500 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Литар Со Литар" data-desc="Бело вино и кисела вода">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -194,13 +417,13 @@
                 <!-- bez-alkoholni pijaloci -->
                 <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/leomande.jpg" class="card-img-top" alt="lemonade" loading="lazy">
+                        <img src="images/fanta.jpg" class="card-img-top" alt="фанта" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Лимонада</h5>
-                            <p class="card-text">Домашна лимонада од свежи лимони.</p>
+                            <h5 class="card-title">Фанта</h5>
+                            <p class="card-text">Освежувачки овошен газиран пијалок со богат портокалов вкус.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>150 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Лимонада" data-desc="Лимон, вода, шеќер">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Фанта" data-desc="Вода, шеќер, јаглерод диоксид, сок од портокал/ароми, лимонска киселина, бои.">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -208,13 +431,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/orange-juice.jpg" class="card-img-top" alt="orange juice" loading="lazy">
+                        <img src="images/sveps.jpg" class="card-img-top" alt="Швепс" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Сок од портокал</h5>
-                            <p class="card-text">Свежо исцеден сок од портокал.</p>
+                            <h5 class="card-title">Швепс</h5>
+                            <p class="card-text">Класичен газиран пијалок со освежувачка горко-лимонска нота и изразена арома.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>120 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Сок од портокал" data-desc="Портокал">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Швепс" data-desc="Вода, шеќер, јаглерод диоксид, лимонска киселина, ароми.">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -222,13 +445,13 @@
 
                 <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/iced-tea.jpg" class="card-img-top" alt="iced tea" loading="lazy">
+                        <img src="images/bravosok.png" class="card-img-top" alt="Браво сок" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Леден чај</h5>
-                            <p class="card-text">Освежувачки чај со лимон и мраз.</p>
+                            <h5 class="card-title">Браво сок</h5>
+                            <p class="card-text">Негазиран овошен сок со природна арома и полн, сладок вкус.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>130 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Леден чај" data-desc="Чај, лимон, мраз">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Браво сок" data-desc="Вода, концентриран овошен сок, шеќер, витамин Ц, природни ароми.">Состојки</button>
                             </div>
                         </div>
                     </div>
@@ -241,7 +464,7 @@
                             <h5 class="card-title">Coca-Cola</h5>
                             <p class="card-text">Освежувачка газирана кола.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>100 ден</strong>
+                                <strong>70 ден</strong>
                                 <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Coca-Cola" data-desc="Вода, шеќер, јаглероден диоксид, ароми">Состојки</button>
                             </div>
                         </div>
@@ -255,98 +478,254 @@
                             <h5 class="card-title">Sprite</h5>
                             <p class="card-text">Освежувачка лимон-лайм газирана пијалок.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>100 ден</strong>
+                                <strong>70 ден</strong>
                                 <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Sprite" data-desc="Вода, шеќер, јаглероден диоксид, лимон, лайм">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- specijaliteti-->
-
-                <div class="col-sm-6 col-md-4 menu-item" data-type="specialty">
+                <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/club-sandwitch.jpg" class="card-img-top" alt="Club Sandwich" loading="lazy">
+                        <img src="images/tonic.webp" class="card-img-top" alt="Тоник" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Клуб сендвич</h5>
-                            <p class="card-text">Сендвич со пилешко, сланина, зеленчук и мајонез.</p>
+                            <h5 class="card-title">Тоник</h5>
+                            <p class="card-text">Горко-освежувачки газиран пијалок со благ лимонест профил.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>300 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Club Sandwich" data-desc="Леб, пилешко, сланина, зелена салата, домат, мајонез">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Тоник" data-desc="Вода, шеќер, јаглерод диоксид, лимонска киселина, ароми, киннин.">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 menu-item" data-type="specialty">
+                <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/pizza.jpg" class="card-img-top" alt="Pizza Kapricioza" loading="lazy">
+                        <img src="images/cedevita.webp" class="card-img-top" alt="Цедевита" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Каприциоза</h5>
-                            <p class="card-text">Класична пица со шунка, печурки и сирење.</p>
+                            <h5 class="card-title">Цедевита</h5>
+                            <p class="card-text">Инстант витаминизиран пијалок со лесна овошна свежина.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>350 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Pizza Kapricioza" data-desc="Тесто, шунка, печурки, сирење, доматен сос">Состојки</button>
+                                <strong>60 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Цедевита" data-desc="Прашок: шеќер, лимонска киселина, витамини (C, B комплекс), овошни ароми, бои.">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 menu-item" data-type="specialty">
+                <div class="col-sm-6 col-md-4 menu-item voda" data-type="non-alcohol" >
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/burrito.jpg" class="card-img-top" alt="Burrito" loading="lazy">
+                        <img src="images/rosakisela.jpg" class="card-img-top" alt="Кисела вода" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Бурито</h5>
-                            <p class="card-text">Мек мексикански бурито со месо, грав и зеленчук.</p>
+                            <h5 class="card-title">Кисела вода</h5>
+                            <p class="card-text">Природна минерална газирана вода со освежувачки вкус.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>320 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Burrito" data-desc="Тортиља, месо, грав, зелена салата, сос">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Кисела вода" data-desc="Природна минерална вода, јаглерод диоксид (ако е додаден).">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 menu-item" data-type="specialty">
+                <div class="col-sm-6 col-md-4 menu-item voda" data-type="non-alcohol" >
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/hamburger.jpg" class="card-img-top" alt="Hamburger" loading="lazy">
+                        <img src="images/rosaobicna.jpg" class="card-img-top" alt="Флаширана вода" loading="lazy" >
                         <div class="card-body">
-                            <h5 class="card-title">Хамбургер</h5>
-                            <p class="card-text">Класичен хамбургер со месо, сирење и зеленчук.</p>
+                            <h5 class="card-title">Флаширана вода</h5>
+                            <p class="card-text">Чиста, природна негазирана вода со благ и освежувачки вкус.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>280 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Hamburger" data-desc="Леб, говедско месо, сирење, домат, зелена салата, сос">Состојки</button>
+                                <strong>70 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Флаширана вода" data-desc="Природна изворска вода.">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 menu-item" data-type="specialty">
+                <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/fries.jpg" class="card-img-top" alt="Fries" loading="lazy">
+                        <img src="images/sprite.jpg" class="card-img-top" alt="Редбул" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Помфрит</h5>
-                            <p class="card-text">Златни помфритчиња, крцкави однадвор и меки внатре.</p>
+                            <h5 class="card-title">Редбул</h5>
+                            <p class="card-text">Енергетски пијалок со интензивен вкус, создаден за брза енергија и фокус.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>120 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Fries" data-desc="Компир, сол, масло">Состојки</button>
+                                <strong>150 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Редбул" data-desc="Вода, шеќер, кофеин, таурин, витамини B, ароми.">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-4 menu-item" data-type="specialty">
+                <div class="col-sm-6 col-md-4 menu-item" data-type="non-alcohol">
                     <div class="card bg-secondary text-white h-100 menu-card">
-                        <img src="images/extra-fries.jpg" class="card-img-top" alt="Extra Fries" loading="lazy">
+                        <img src="images/strumka.jpg" class="card-img-top" alt="Струмка" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Додаток помфрит</h5>
-                            <p class="card-text">Дополнителен порција помфрит – 40 ден.</p>
+                            <h5 class="card-title">Струмка</h5>
+                            <p class="card-text">Домашен стил газиран пијалок со лесна слаткост и освежувачки овошни тонови.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <strong>40 ден</strong>
-                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Extra Fries" data-desc="Компир, сол, масло">Состојки</button>
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Струмка" data-desc="Вода, шеќер, јаглерод диоксид, овошни ароми, лимонска киселина.">Состојки</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- TOPLI NAPITOCI-->
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/espresso.jpg" class="card-img-top" alt="Еспресо" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Еспресо</h5>
+                            <p class="card-text">Класично силно кафе со богат вкус и интензивна арома.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>50 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Еспресо" data-desc="Мелено кафе">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/ladno%20espreso.jpg" class="card-img-top" alt="Ладно-Еспресо" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Ладно Еспресо</h5>
+                            <p class="card-text">Класично силно кафе со богат вкус и интензивна арома.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>60 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Ладно Еспресо" data-desc="Мелено кафе и мраз">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/malo%20makijato.jpg" class="card-img-top" alt="Мало Макијато" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Мало Макијато</h5>
+                            <p class="card-text">Еспресо со малку млеко за поблага и покремаста текстура.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>50 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Мало Макијато" data-desc="Еспресо, млеко или пена">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/golemo%20makijato.jpg" class="card-img-top" alt="Големо Макијато" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Големо Макијато</h5>
+                            <p class="card-text">Подолго кафе со додавање млеко — балансиран вкус и блага кремастост.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Големо Макијато" data-desc="Долго еспресо и млеко или млечна пена">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/iced%20maciato.jpg" class="card-img-top" alt="Ладно Макијато" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Ладно Макијато</h5>
+                            <p class="card-text">Освежувачки студен напиток со кафе, млеко и лесна пена</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Ладно Макијато" data-desc="Долго еспресо ,млеко и мраз">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/neskafe.jpg" class="card-img-top" alt="Нескафе" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Нескафе</h5>
+                            <p class="card-text">Освежувачки студен напиток со нес кафе, млеко и лесна пена.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Нескафе" data-desc="Нес кафе, млеко, лесна млечна пена">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/kapucino.jpg" class="card-img-top" alt="Капучино" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Капучино</h5>
+                            <p class="card-text">Кремасто кафе со совршен баланс меѓу еспресо, млеко и густа млечна пена.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Капучино" data-desc="Еспресо, топло млеко, густа млечна пена, какао(по избор)">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/kakao.jpg" class="card-img-top" alt="Какао" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Какао</h5>
+                            <p class="card-text">Топол чоколаден напиток со богат вкус и мазна текстура.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Какао" data-desc="Какао прав, топло млеко, шеќер(по избор)">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/amerikano.jpg" class="card-img-top" alt="Aмерикано" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Американо</h5>
+                            <p class="card-text">Благо и подолго кафе добиено со разредено еспресо — лесно, но ароматично.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>50 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Американо" data-desc="Еспресо, топла вода">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/late%20makijato.jpg" class="card-img-top" alt="Лате Макијато" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Лате Макијато</h5>
+                            <p class="card-text">Нежен и кремаст напиток со нежен слој еспресо што се спојува со обилно топло млеко</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Лате Макијато" data-desc="Еспресо, топло млеко и млечна пена">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 menu-item" data-type="coffee">
+                    <div class="card bg-secondary text-white h-100 menu-card">
+                        <img src="images/hot%20chocolate.jpg" class="card-img-top" alt="Топло чоколадо" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Топло чоколадо</h5>
+                            <p class="card-text">Богат и кремаст топол напиток со интензивен чоколаден вкус</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>80 ден</strong>
+                                <button class="btn btn-sm btn-outline-light view-ingredient" data-name="Лате Макијато" data-desc="Топено чоколадо, топло млеко, шлаг и шеќер(по избор)">Состојки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <!-- Повеќе items можеш да додадеш по истиот образец -->
             </div>
@@ -359,92 +738,30 @@
             <h2 class="text-center mb-4">Галерија</h2>
             <div class="row g-3">
                 <div class="col-12 col-md-4">
-                    <img src="images/dj.png"
-                         class="img-fluid rounded gallery-img" alt="gallery1" data-full="images/dj.png">
+                    <img src="images/galeri1.png"
+                         class="img-fluid rounded gallery-img" alt="gallery1" data-full="images/galeri1.png">
                 </div>
                 <div class="col-12 col-md-4">
-                    <img src="images/interior.png"
-                         class="img-fluid rounded gallery-img" alt="gallery2" data-full="images/interior.png">
+                    <img src="images/galeri2.png"
+                         class="img-fluid rounded gallery-img" alt="gallery2" data-full="images/galeri2.png">
                 </div>
                 <div class="col-12 col-md-4">
-                    <img src="images/interior2.png"
-                         class="img-fluid rounded gallery-img" alt="gallery3" data-full="images/interior2.png">
+                    <img src="images/galeri3.png"
+                         class="img-fluid rounded gallery-img" alt="gallery3" data-full="images/galeri3.png">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EVENTS -->
-    <section id="events" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Настани</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5>Live DJ Night</h5>
-                            <p>Секој петок од 22:00 — живи диџеј сетови.</p>
-                            <p><strong>Влез: 200 ден</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5>Acoustic Sunday</h5>
-                            <p>Неделен акустичен перформанс, 19:00 — 22:00.</p>
-                            <p><strong>Влез: бесплатен</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <div class="text-center">
-                        <h3 id="nextEventTime">Следен настан: —</h3>
-                        <small class="text-muted">Проверувај редовно за ажурирања</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- RESERVATION -->
-    <section id="reservation" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Резервација</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <form id="reservationForm" class="card p-4 shadow-sm">
-                        <div class="mb-3">
-                            <label class="form-label">Име и презиме</label>
-                            <input type="text" id="resName" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Телефон</label>
-                            <input type="tel" id="resPhone" class="form-control" required pattern="[0-9 +\-()]{6,}">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Датум и време</label>
-                            <input type="datetime-local" id="resDatetime" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Број на гости</label>
-                            <input type="number" id="resGuests" min="1" max="20" class="form-control" value="2" required>
-                        </div>
-                        <button class="btn btn-warning w-100" type="submit">Потврди резервација</button>
-                        <div id="resMsg" class="mt-3 small text-success visually-hidden">Резервацијата е зачувана.</div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-</main>
+
 
 <!-- FOOTER -->
 <footer class="bg-dark text-white py-3">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div>&copy; <span id="year"></span> Night Owl Bar</div>
-        <div>Контакт: +389 78 940 919 • <i class="bi bi-geo-alt"></i> Центар, Скопје</div>
+        <div>&copy; <span id="year"></span> <a style="color: white; text-decoration: none" href="https://www.instagram.com/coffeebarotela/" target="_blank" >ОТЕЛА Coffee Bar</a></div>
+        <div> <i class="bi bi-geo-alt"></i> <a href="https://www.google.com/maps/place/Otela+Coffee+Bar/@41.2399976,20.5920002,21z/data=!4m15!1m8!3m7!1s0x1350e3b89f63d8f1:0x1c2cf1b0b2580607!2sVevchani!3b1!8m2!3d41.2407543!4d20.5915649!16s%2Fm%2F02rh_gn!3m5!1s0x1350e34f9e75a501:0x80d3781b82041b90!8m2!3d41.2399042!4d20.5919939!16s%2Fg%2F11v3j7lf7l?entry=ttu&g_ep=EgoyMDI2MDMxMC4wIKXMDSoASAFQAw%3D%3D" style="text-decoration: none; color:white" target="_blank">Держава Вевчани</a></div>
     </div>
 </footer>
 
